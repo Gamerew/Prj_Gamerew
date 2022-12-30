@@ -13,7 +13,7 @@ import java.util.Optional;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
+    @Autowired(required = true)
     UserRepository repository;
 
     @Override
